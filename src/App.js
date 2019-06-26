@@ -12,7 +12,6 @@ class App extends Component
     ]
   };
   render() {
-
     return (
     <div class='App'>
       <Person name ={this.state.persons[0].name} age={this.state.persons[0].age}/>
