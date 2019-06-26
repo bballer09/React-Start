@@ -5,7 +5,7 @@ function App() {
   return <div class='App'>
     <Person name ="Naman" age="21"/>
     <Person name ="Mrinali" age="23">Hello</Person>
-    {React.createElement(Person ,{name:'Yousuf',age:'22'},'Hello')}
+    {React.createElement(Person ,{name:'Yousuf',age:'22'},null)}
   </div>;
 }
 
