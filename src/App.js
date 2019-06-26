@@ -2,7 +2,7 @@ import React from 'react';
 import './App.css';
 
 function App() {
-  return React.createElement('div',null,React.createElement('h1',null,'Hiii'));
+  return React.createElement('div',null,React.createElement('h1',null,'Hii'));
 }
 
 export default App;
