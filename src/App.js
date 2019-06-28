@@ -31,9 +31,15 @@ class App extends Component
   }
 
   render() {
+
+    const style={
+      'background-color':'blue',
+      cursor:'pointer',
+      border:'1px solid grey'
+    }
     return (
     <div class='App'>
-      <button onClick={()=>this.switchButtonClickHandler('Naman')}>Switch Name</button>
+      <button style={style} onClick={()=>this.switchButtonClickHandler('Naman')}>Switch Name</button>
       <Person 
       name ={this.state.persons[0].name} 
       age={this.state.persons[0].age}
