@@ -6,6 +6,7 @@ const Person = (props) => {
             {
             props.children==null?
             <p style={{color: 'red'}}>No children</p>:<p>{props.children}</p>}
+            <input type="text" onChange={props.type}/>
         </div>
     );
 };
