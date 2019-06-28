@@ -25,9 +25,19 @@ class App extends Component
     return (
     <div class='App'>
       <button onClick={this.switchButtonClickHandler}>Switch Name</button>
-      <Person name ={this.state.persons[0].name} age={this.state.persons[0].age}/>
-      <Person name ={this.state.persons[1].name} age={this.state.persons[1].age}>Hello</Person>
-      {React.createElement(Person ,{name:this.state.persons[2].name,age:this.state.persons[2].age},null)}
+      <Person 
+      name ={this.state.persons[0].name} 
+      age={this.state.persons[0].age}
+      click={this.switchButtonClickHandler}
+      />
+      <Person 
+      name ={this.state.persons[1].name} 
+      age={this.state.persons[1].age}
+      click={this.switchButtonClickHandler}
+      >Hello</Person>
+      {React.createElement(Person ,
+        {name:this.state.persons[2].name,age:this.state.persons[2].age,click:this.switchButtonClickHandler}
+      ,null)}
     </div>);
   }
 }

@@ -1,7 +1,7 @@
 import React from 'react';
 const Person = (props) => {
     return (
-        <div>
+        <div onClick={props.click}>
             <p>I am a {props.name} and i am {props.age} years old!!</p>
             {
             props.children==null?
